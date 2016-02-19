@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # update via SVN
-svn up
+#svn up
 
 # find out the current revision
-SVNVERSION="$(export LANG=C && export LC_ALL=C && echo $(svn info | awk '/^Revision:/ { print $2 }'))"
+#SVNVERSION="$(export LANG=C && export LC_ALL=C && echo $(svn info | awk '/^Revision:/ { print $2 }'))"
 
 # use checkinstall to create the DEB package
 sudo checkinstall -D \
